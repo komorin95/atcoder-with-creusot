@@ -1,1 +1,2 @@
-pub mod abc086_a;
+#[allow(unused)]
+use creusot_contracts::*;

@@ -1,22 +1,37 @@
-use atcoder_with_creusot::abc086_a::*;
-use std::io::{BufWriter, Read, Write, stdin, stdout};
+use creusot_contracts::trusted;
+use proconio::{fastout, input};
 
+#[trusted]
+#[fastout]
 fn main() {
-    let mut stdin = stdin();
-    let stdout = stdout();
-    let mut output = BufWriter::new(stdout.lock());
-    let mut input_str = String::new();
-    let _ = stdin.read_to_string(&mut input_str);
-    let mut input_iter = input_str.split_ascii_whitespace();
-    macro_rules! read(() => (input_iter.next().unwrap().parse().unwrap()));
-    macro_rules! print(( $( $x:expr ),*) => (write!(output, $($x,)*).unwrap()));
-    macro_rules! println(( $( $x:expr ),*) => (writeln!(output, $($x,)*).unwrap()));
-
-    let a = read!();
-    let b = read!();
-    if solve1(a, b) {
+    input! {
+        a: usize,
+        b: usize,
+    }
+    if solve::solve1(a, b) {
         println!("Even");
     } else {
         println!("Odd");
+    }
+}
+
+mod solve {
+    use creusot_contracts::*;
+
+    #[requires(1 <= a@ && a@ <= 10000)]
+    #[requires(b@ >= 1)]
+    #[requires(b@ <= 10000)]
+    #[ensures(((a@ * b@) % 2 == 0) == result)]
+    pub fn solve1(a: usize, b: usize) -> bool {
+        (a * b) % 2 == 0
+    }
+
+    #[requires(a@ >= 1)]
+    #[requires(a@ <= 10000)]
+    #[requires(b@ >= 1)]
+    #[requires(b@ <= 10000)]
+    #[ensures(((a@ * b@) % 2 == 0) == result)]
+    pub fn solve2(a: u16, b: u16) -> bool {
+        a % 2 == 0 || b % 2 == 0
     }
 }
