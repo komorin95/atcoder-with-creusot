@@ -14,7 +14,7 @@ fn main() {
 
     let a = read!();
     let b = read!();
-    if solve(a, b) {
+    if solve1(a, b) {
         println!("Even");
     } else {
         println!("Odd");
