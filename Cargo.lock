@@ -7,6 +7,7 @@ name = "atcoder-with-creusot"
 version = "0.1.0"
 dependencies = [
  "creusot-contracts",
+ "proconio",
 ]
 
 [[package]]
@@ -46,7 +47,7 @@ checksum = "a2bc058496a7cf749ecd009777c8814e316583590746e5fe82d9bd8ecba7440d"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn",
+ "syn 2.0.100",
 ]
 
 [[package]]
@@ -58,7 +59,7 @@ dependencies = [
  "pearlite-syn",
  "proc-macro2",
  "quote",
- "syn",
+ "syn 2.0.100",
  "uuid",
 ]
 
@@ -127,7 +128,7 @@ checksum = "1cc09c14f60ecd4713b065cad03700bd2460689d3d20f98f85de46a4f1493725"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn",
+ "syn 2.0.100",
 ]
 
 [[package]]
@@ -137,6 +138,26 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a31971752e70b8b2686d7e46ec17fb38dad4051d94024c88df49b667caea9c84"
 dependencies = [
  "unicode-ident",
+]
+
+[[package]]
+name = "proconio"
+version = "0.4.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0eb404616795079e2390e7115acf0ada24e9332e8476de2aada7bacb9992dc9e"
+dependencies = [
+ "proconio-derive",
+]
+
+[[package]]
+name = "proconio-derive"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bccfa078f1a3db6563793531989799a2201d9bdf609f48dd82620b443fbcd409"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 1.0.109",
 ]
 
 [[package]]
@@ -153,6 +174,17 @@ name = "r-efi"
 version = "5.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "74765f6d916ee2faa39bc8e68e4f3ed8949b48cccdac59983d287a7cb71ce9c5"
+
+[[package]]
+name = "syn"
+version = "1.0.109"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "72b64191b275b66ffe2469e8af2c1cfe3bafa67b529ead792a6d0160888b4237"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "unicode-ident",
+]
 
 [[package]]
 name = "syn"
