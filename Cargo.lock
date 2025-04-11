@@ -31,7 +31,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 [[package]]
 name = "creusot-contracts"
 version = "0.4.0"
-source = "git+https://github.com/creusot-rs/creusot?rev=36507c0#36507c08032361a1dcf8cf2314803afef029929e"
+source = "git+https://github.com/creusot-rs/creusot?rev=6bbb60f#6bbb60fd027afcfaee95ca50027f7065d2fd472e"
 dependencies = [
  "creusot-contracts-dummy",
  "creusot-contracts-proc",
@@ -41,7 +41,7 @@ dependencies = [
 [[package]]
 name = "creusot-contracts-dummy"
 version = "0.4.0"
-source = "git+https://github.com/creusot-rs/creusot?rev=36507c0#36507c08032361a1dcf8cf2314803afef029929e"
+source = "git+https://github.com/creusot-rs/creusot?rev=6bbb60f#6bbb60fd027afcfaee95ca50027f7065d2fd472e"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -51,7 +51,7 @@ dependencies = [
 [[package]]
 name = "creusot-contracts-proc"
 version = "0.4.0"
-source = "git+https://github.com/creusot-rs/creusot?rev=36507c0#36507c08032361a1dcf8cf2314803afef029929e"
+source = "git+https://github.com/creusot-rs/creusot?rev=6bbb60f#6bbb60fd027afcfaee95ca50027f7065d2fd472e"
 dependencies = [
  "pearlite-syn",
  "proc-macro2",
@@ -120,7 +120,7 @@ dependencies = [
 [[package]]
 name = "pearlite-syn"
 version = "0.4.0"
-source = "git+https://github.com/creusot-rs/creusot?rev=36507c0#36507c08032361a1dcf8cf2314803afef029929e"
+source = "git+https://github.com/creusot-rs/creusot?rev=6bbb60f#6bbb60fd027afcfaee95ca50027f7065d2fd472e"
 dependencies = [
  "proc-macro2",
  "quote",
